@@ -7,10 +7,10 @@ main.o: main.cpp Ciudadano.h Maestro.h Estudiante.h Quirk.h Emmitter.h Transform
 Ciudadano.o: Ciudadano.h Ciudadano.cpp
 	g++ -c Ciudadano.cpp
 
-Maestro.o: Maestro.h Maestro.cpp
+Maestro.o: Maestro.h Ciudadano.h Maestro.cpp
 	g++ -c Maestro.cpp
 
-Estudiante.o: Estudiante.h Estudiante.cpp
+Estudiante.o: Estudiante.h Maestro.h Ciudadano.h Estudiante.cpp
 	g++ -c Estudiante.cpp
 
 Quirk.o: Quirk.h Quirk.cpp

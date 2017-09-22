@@ -60,10 +60,6 @@ double Maestro::getSueldo(){
    return Sueldo;
 }
 
-Ciudadano* getCiudadano(int p){
-
-}
-
-void addCiudadano(Ciudadano){
-  
+string Maestro::toString(){
+  return Nombre + "";
 }

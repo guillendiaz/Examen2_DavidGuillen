@@ -67,3 +67,7 @@ bool Ciudadano::equals(Ciudadano* other)const{
 	return other==this;
 
 }
+
+string Ciudadano::toString(){
+
+}

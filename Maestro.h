@@ -11,11 +11,10 @@
 #include "nodo.h"
 using namespace std;
 
+class Estudiante;
 
 class Maestro : public Ciudadano{
     protected:
-        int pos;
-        ADTList* list = new LinkedList();
         string Homeroom;
         string Classroom;
         string Departamento;
@@ -23,25 +22,27 @@ class Maestro : public Ciudadano{
         double Sueldo;
 
     public:
-        Maestro(string,string,string,string,string,string,string, string,string,string,string,double);
-        Maestro();
-        string getHomeroom();
-        void setHomeroom(string);
+      int pos;
+      ADTList* list = new LinkedList();
+      Maestro();
+      Maestro(string,string,string,string,string,string,string, string,string,string,string,double);
 
-        string getClassroom();
-        void setClassroom(string);
+      string getHomeroom();
+      void setHomeroom(string);
 
-        string getDepartamento();
-        void setDepartamento(string);
+      string getClassroom();
+      void setClassroom(string);
 
-        string getAlias();
-        void setAlias(string);
+      string getDepartamento();
+      void setDepartamento(string);
 
-        double getSueldo();
-        void setSueldo(double);
+      string getAlias();
+      void setAlias(string);
 
-        Ciudadano* getCiudadano();
-        void addCiudadano(Ciudadano);
+      double getSueldo();
+      void setSueldo(double);
+
+      string toString();
 
 };
 #endif

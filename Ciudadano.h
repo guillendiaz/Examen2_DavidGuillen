@@ -40,6 +40,7 @@ class Ciudadano{
         void setTipoSangre(string);
 
         virtual bool equals(Ciudadano*)const;
+        virtual string toString();
 
 };
 #endif

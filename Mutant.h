@@ -8,7 +8,7 @@
 using namespace std;
 
 
-class Mutant :  Quirk{
+class Mutant : public Quirk{
     protected:
         string Caracteristica;
     public:
