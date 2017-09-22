@@ -14,7 +14,7 @@ class LinkedList : public ADTList{
 	public:
 		LinkedList();
 		virtual ~LinkedList();
-		virtual bool insert(Luchador*, int);
+		virtual bool insert(Ciudadano*, int);
 		virtual Ciudadano* remove(int);
 		virtual Ciudadano* first()const;
 		virtual Ciudadano* last()const;

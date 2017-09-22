@@ -9,6 +9,9 @@
 #include "Mutant.h"
 #include "Estudiante.h"
 #include "Maestro.h"
+#include "ADTList.h"
+#include "LinkedList.h"
+#include "nodo.h"
 
 using namespace std;
 int Menu();
@@ -26,7 +29,7 @@ int main(){
 			}
 				break;
 			case 3:{
-				
+
 			}
 				break;
 		}//switch()

@@ -8,7 +8,7 @@
 #include "Estudiante.h"
 #include "ADTList.h"
 #include "LinkedList.h"
-
+#include "nodo.h"
 using namespace std;
 
 
@@ -40,7 +40,7 @@ class Maestro : public Ciudadano{
         double getSueldo();
         void setSueldo(double);
 
-        ADTList getCiudadano();
+        Ciudadano* getCiudadano();
         void addCiudadano(Ciudadano);
 
 };

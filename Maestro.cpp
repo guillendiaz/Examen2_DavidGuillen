@@ -60,17 +60,10 @@ double Maestro::getSueldo(){
    return Sueldo;
 }
 
-ADTList getCiudadano(){
+Ciudadano* getCiudadano(int p){
 
 }
 
 void addCiudadano(Ciudadano){
-  if(list->insert(lu,pos)){
-    cout<< "Se ha Ingresado!"<<endl
-    <<endl;
-    pos++;
-  }else{
-    cout<<"Ocurrio un Error"<<endl
-    <<endl;
-  }
+  
 }

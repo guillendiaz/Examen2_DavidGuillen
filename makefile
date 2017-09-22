@@ -2,7 +2,7 @@ main: main.o Ciudadano.o Maestro.o Estudiante.o Quirk.o Emmitter.o Transformatio
 	g++ main.o Ciudadano.o Maestro.o Estudiante.o Quirk.o Emmitter.o Transformation.o Mutant.o ADTList.o LinkedList.o nodo.o -o main
 
 main.o: main.cpp Ciudadano.h Maestro.h Estudiante.h Quirk.h Emmitter.h Transformation.h Mutant.h ADTList.h LinkedList.h nodo.h
-	g++ main.cpp
+	g++ -c main.cpp
 
 Ciudadano.o: Ciudadano.h Ciudadano.cpp
 	g++ -c Ciudadano.cpp
@@ -22,7 +22,7 @@ Emmitter.o: Emmitter.h Emmitter.cpp
 Transformation.o: Transformation.h Transformation.cpp
 	g++ -c Transformation.cpp
 
-Mutant.o: Mutant.h mutn.cpp
+Mutant.o: Mutant.h Mutant.cpp
 	g++ -c Mutant.cpp
 
 ADTList.o: ADTList.h ADTList.cpp
@@ -35,4 +35,4 @@ nodo.o: nodo.h nodo.cpp
 	g++ -c nodo.cpp
 
 clean:
-	rm *.o main.cpp
+	rm *.o main

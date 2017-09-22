@@ -4,10 +4,9 @@
 #include "Ciudadano.h"
 class nodo{
 	friend class LinkedList;
-	private:
+	protected:
 		Ciudadano* elemento;
 		nodo* next;
-
 	public:
 		nodo(Ciudadano*);
 		~nodo();

@@ -13,7 +13,7 @@ Estudiante::Estudiante(string Nombre,string FechaNacimiento,string ColorPelo,str
   this->Like=Like;
   this->Dislike=Dislike;
   this->TipoSangre=TipoSangre;
-  
+
   this->Promedio=Promedio;
   this->Homeroom=Homeroom;
   this->Classroom=Classroom;
@@ -43,10 +43,10 @@ string Estudiante::getClassroom(){
    return Classroom;
 }
 
-Quirk getClassroom(){
+Quirk Estudiante::getQuirk(){
   return quirk;
 }
 
-void setClassroom(Quirk quirk){
-  this->quirk = quirk
+void Estudiante::setQuirk(Quirk quirk){
+  this->quirk = quirk;
 }

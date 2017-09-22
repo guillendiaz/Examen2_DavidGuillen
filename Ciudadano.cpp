@@ -62,3 +62,8 @@ void Ciudadano::setTipoSangre(string TipoSangre){
 string Ciudadano::getTipoSangre(){
    return TipoSangre;
 }
+
+bool Ciudadano::equals(Ciudadano* other)const{
+	return other==this;
+
+}

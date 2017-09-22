@@ -121,13 +121,13 @@ int LinkedList::indexOf(Ciudadano* e)const {
 
 Ciudadano* LinkedList::get(int p){
 	if (p < 0 || p >= size){
-        return 0;
+		return 0;
 	}
-    nodo* temp = head;
-    for (int i=0; i < p; i++){
-        temp = temp->next;
-    }
-    return temp->elemento;
+	nodo* temp = head;
+	for (int i=0; i < p; i++){
+		temp = temp->next;
+	}
+	return temp->elemento;
 }
 
 int LinkedList::Capacity()const {
