@@ -131,12 +131,12 @@ int main(){
 						cout<<"Ingrese Efecto Emision: ";
 						cin>>EfectoEmision;
 						cout<<endl;
-						cout<<"Ingrese Cantidad Contacto: ";
+						cout<<"Ingrese Cantidad Contacto: "<<endl;
 						cin>>	CantidadContacto;
-						cout<<"Ingrese ContactoFisico: ";
+						cout<<"Ingrese Contacto Fisico: "<<endl;
 						cout<<"Ingrese Opcion :"<<endl
 						<<"1. SI"<<endl
-						<<"2. NO:"<<endl;
+						<<"2. NO"<<endl;
 						cin>>OpcioConta;
 						if (OpcioConta == 1) {
 							ContactoFisico = true;
@@ -258,7 +258,7 @@ int main(){
 				}
 				if (ContEstudiante != 0) {
 					Total = Promedio / ContEstudiante;
-					cout<<"Promedio del Sueldo en los Maestros: "<<Total<<endl;
+					cout<<"Promedio del Promedio en los Estudiantes: "<<Total<<endl;
 				}else{
 					cout<<"A Ocurrido un Error: "<<endl;
 				}
@@ -278,17 +278,17 @@ int main(){
 						}
 					}
 				}
-				cout<< " Department of Heroes "<<endl<<NombresDeHe<<endl;
-				cout<< " Department of Support "<<endl<<NombresDeSu<<endl;
-				cout<< " Department of Management "<<endl<<NombresDeMa<<endl;
+				cout<< "Department of Heroes"<<endl<<NombresDeHe<<endl;
+				cout<< "Department of Support"<<endl<<NombresDeSu<<endl;
+				cout<< "Department of Management"<<endl<<NombresDeMa<<endl;
 			}
 			break;
 			case 10:{
 				ofstream Save("Save.txt", ios::app);
 				for (int i = 0; i < ciudadanos->Size(); ++i){
-					Save<<ciudadanos->get(i)->getNombre()<<";"<<ciudadanos->get(i)->getFechaNacimiento()<<";"<<ciudadanos->get(i)->getColorPelo()
-					<<";"<<ciudadanos->get(i)->getColorOjos()<<";"<<ciudadanos->get(i)->getLike()<<";"<<ciudadanos->get(i)->getDislike()
-					<<";"<<ciudadanos->get(i)->getTipoSangre()<<";"<<endl;
+					Save<<"Nombre: "<<ciudadanos->get(i)->getNombre()<<endl<<"Fecha Nacimiento: "<<ciudadanos->get(i)->getFechaNacimiento()<<endl<<"Color Pelo: "<<ciudadanos->get(i)->getColorPelo()
+					<<endl<<"Color Ojos: "<<ciudadanos->get(i)->getColorOjos()<<endl<<"Like: "<<ciudadanos->get(i)->getLike()<<endl<<"Dislike: "<<ciudadanos->get(i)->getDislike()
+					<<endl<<"Tipo Sangre: "<<ciudadanos->get(i)->getTipoSangre()<<endl<<"---------------------------------------------------------------------------"<<endl;
 				}
 				Save.close();
 			}
